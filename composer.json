@@ -1,5 +1,5 @@
 {
-  "name": "umbrella-evgeny-nefedkin/fb-lite",
+  "name": "umbrella-evgeny-nefedkin/phone-verify",
   "description": "Phone verification service with build-in adapter for Nexmo",
   "keywords": ["phone", "security"],
   "type": "symfony-bundle",

@@ -1,0 +1,16 @@
+parameters:
+
+    nexmo: # phone verification
+        api_key: de892931
+        api_secret: 8tctNKKiy5p0F3yo
+        brand: AimChatDev
+
+    redis.config:
+        scheme: tcp
+        host: 127.0.0.1
+        port: 6379
+
+    redis.options:
+        parameters:
+            password: null
+            database: 0

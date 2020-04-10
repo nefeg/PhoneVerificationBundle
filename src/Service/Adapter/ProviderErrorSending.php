@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 21.06.17
- * Time: 18:47
- */
 
-namespace Umbrella\PhoneVerificationBundle\Service\Adapter;
+namespace PhoneVerificationBundle\Service\Adapter;
 
 
 /**

@@ -1,11 +1,11 @@
 <?php
 
-namespace Umbrella\PhoneVerificationBundle\Service\Adapter;
+namespace PhoneVerificationBundle\Service\Adapter;
 
-use Umbrella\PhoneVerificationBundle\Service\AdapterInterface;
-use Umbrella\PhoneVerificationBundle\Service\AdapterErrorInterface;
+use PhoneVerificationBundle\Service\AdapterInterface;
+use PhoneVerificationBundle\Service\AdapterErrorInterface;
 use GuzzleHttp\Client;
-use Umbrella\PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoResponseJSON;
+use PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoResponseJSON;
 use Predis\Pipeline\Pipeline;
 
 /**
@@ -48,7 +48,7 @@ class NexmoAdapter implements AdapterInterface {
     private $Redis;
 
 	/**
-	 * @var \Umbrella\PhoneVerificationBundle\Service\AdapterErrorInterface|null
+	 * @var \PhoneVerificationBundle\Service\AdapterErrorInterface|null
 	 */
     private $LastError;
 
@@ -243,8 +243,8 @@ class NexmoAdapter implements AdapterInterface {
 
 
 	/**
-	 * @param \Umbrella\PhoneVerificationBundle\Service\Adapter\AdapterError $Error
-	 * @return \Umbrella\PhoneVerificationBundle\Service\Adapter\NexmoAdapter
+	 * @param \PhoneVerificationBundle\Service\Adapter\AdapterError $Error
+	 * @return \PhoneVerificationBundle\Service\Adapter\NexmoAdapter
 	 */
 	private function setError(AdapterError $Error) :NexmoAdapter{
 
@@ -254,7 +254,7 @@ class NexmoAdapter implements AdapterInterface {
 	}
 
 	/**
-	 * @return \Umbrella\PhoneVerificationBundle\Service\AdapterErrorInterface|null
+	 * @return \PhoneVerificationBundle\Service\AdapterErrorInterface|null
 	 */
 	public function getLastError(): ?AdapterErrorInterface {
 		return $this->LastError;

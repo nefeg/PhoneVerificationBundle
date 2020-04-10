@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 12.07.2018
- * Time: 21:52
- */
 
-namespace Umbrella\PhoneVerificationBundle;
+namespace PhoneVerificationBundle;
 
 
 /**
@@ -23,7 +17,7 @@ interface UserPhoneInterface
 
 	/**
 	 * @param string $device
-	 * @return \Umbrella\PhoneVerificationBundle\UserPhoneInterface
+	 * @return \PhoneVerificationBundle\UserPhoneInterface
 	 */
 	public function setDevice(string $device) :UserPhoneInterface;
 
@@ -34,7 +28,7 @@ interface UserPhoneInterface
 
 	/**
 	 * @param string $phone
-	 * @return \Umbrella\PhoneVerificationBundle\UserPhoneInterface
+	 * @return \PhoneVerificationBundle\UserPhoneInterface
 	 */
 	public function setPhone(string $phone) :UserPhoneInterface;
 }

@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 20.06.17
- * Time: 21:29
- */
 
-namespace Umbrella\PhoneVerificationBundle\Service\Adapter\Nexmo;
+namespace PhoneVerificationBundle\Service\Adapter\Nexmo;
 
 
 /**

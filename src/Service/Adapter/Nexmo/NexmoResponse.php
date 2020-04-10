@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 20.06.17
- * Time: 15:49
- */
 
-namespace Umbrella\PhoneVerificationBundle\Service\Adapter\Nexmo;
+namespace PhoneVerificationBundle\Service\Adapter\Nexmo;
 
 
 /**
@@ -45,7 +39,7 @@ abstract class NexmoResponse
 	abstract public function getStatusCode() :int;
 
 	/**
-	 * @return \Umbrella\PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError|null
+	 * @return \PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError|null
 	 */
 	abstract public function getError() :?NexmoError;
 }

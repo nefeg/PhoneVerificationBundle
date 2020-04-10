@@ -1,6 +1,6 @@
 <?php
 
-namespace Umbrella\PhoneVerificationBundle\Service;
+namespace PhoneVerificationBundle\Service;
 
 interface AdapterInterface
 {
@@ -19,7 +19,7 @@ interface AdapterInterface
     public function isValidPIN(string $phone, string $code, array $parameters = []) : bool;
 
 	/**
-	 * @return \Umbrella\PhoneVerificationBundle\Service\AdapterErrorInterface|null
+	 * @return \PhoneVerificationBundle\Service\AdapterErrorInterface|null
 	 */
 	public function getLastError() :?AdapterErrorInterface;
 }

@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 20.06.17
- * Time: 15:09
- */
 
-namespace Umbrella\PhoneVerificationBundle\Service\Adapter\Nexmo;
+namespace PhoneVerificationBundle\Service\Adapter\Nexmo;
 
 
 /**
@@ -37,7 +31,7 @@ class NexmoResponseJSON extends NexmoResponse
 	private $error_text;
 
 	/**
-	 * @var \Umbrella\PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError
+	 * @var \PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError
 	 */
 	private $Error;
 
@@ -76,7 +70,7 @@ class NexmoResponseJSON extends NexmoResponse
 	}
 
 	/**
-	 * @return \Umbrella\PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError|null
+	 * @return \PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError|null
 	 */
 	public function getError() :?NexmoError{
 

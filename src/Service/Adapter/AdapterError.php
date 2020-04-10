@@ -1,14 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 20.06.17
- * Time: 16:37
- */
 
-namespace Umbrella\PhoneVerificationBundle\Service\Adapter;
+namespace PhoneVerificationBundle\Service\Adapter;
 
-use Umbrella\PhoneVerificationBundle\Service\AdapterErrorInterface;
+use PhoneVerificationBundle\Service\AdapterErrorInterface;
 use Throwable;
 
 /**

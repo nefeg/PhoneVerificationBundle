@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 12.07.2018
- * Time: 23:30
- */
 
-namespace Umbrella\PhoneVerificationBundle;
+namespace PhoneVerificationBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

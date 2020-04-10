@@ -1,9 +1,9 @@
 <?php
 
-namespace Umbrella\PhoneVerificationBundle\Service;
+namespace PhoneVerificationBundle\Service;
 
-use Umbrella\PhoneVerificationBundle\UserPhoneInterface;
-use Umbrella\PhoneVerificationBundle\VerificationServiceInterface;
+use PhoneVerificationBundle\UserPhoneInterface;
+use PhoneVerificationBundle\VerificationServiceInterface;
 
 
 /**
@@ -14,12 +14,12 @@ use Umbrella\PhoneVerificationBundle\VerificationServiceInterface;
 class VerificationService implements VerificationServiceInterface
 {
 	/**
-	 * @var \Umbrella\PhoneVerificationBundle\Service\AdapterInterface
+	 * @var \PhoneVerificationBundle\Service\AdapterInterface
 	 */
 	private $Adapter;
 
 	/**
-	 * @return \Umbrella\PhoneVerificationBundle\Service\AdapterInterface
+	 * @return \PhoneVerificationBundle\Service\AdapterInterface
 	 */
 	protected function getAdapter() :AdapterInterface{
 
@@ -29,7 +29,7 @@ class VerificationService implements VerificationServiceInterface
 	/**
 	 * VerificationService constructor.
 	 *
-	 * @param \Umbrella\PhoneVerificationBundle\Service\AdapterInterface $Adapter
+	 * @param \PhoneVerificationBundle\Service\AdapterInterface $Adapter
 	 */
 	public function __construct(AdapterInterface $Adapter)
 	{
@@ -57,8 +57,8 @@ class VerificationService implements VerificationServiceInterface
 	 * `UnexpectedError` - if code was not be sent, but no errors returned
 	 *
 	 * @param string $phone
-	 * @throws \Umbrella\PhoneVerificationBundle\Service\UnexpectedError
-	 * @throws \Umbrella\PhoneVerificationBundle\VerificationErrorInterface
+	 * @throws \PhoneVerificationBundle\Service\UnexpectedError
+	 * @throws \PhoneVerificationBundle\VerificationErrorInterface
 	 */
 	public function sendCode(string $phone) :void
 	{
@@ -101,8 +101,8 @@ class VerificationService implements VerificationServiceInterface
 	 * @param string $phone
 	 * @param string $code
 	 * @return bool
-	 * @throws \Umbrella\PhoneVerificationBundle\Service\UnexpectedError
-	 * @throws \Umbrella\PhoneVerificationBundle\VerificationErrorInterface
+	 * @throws \PhoneVerificationBundle\Service\UnexpectedError
+	 * @throws \PhoneVerificationBundle\VerificationErrorInterface
 	 */
 	public function verifyCode(string $phone, string $code) :bool
 	{
@@ -146,13 +146,13 @@ class VerificationService implements VerificationServiceInterface
 	 * `ADAPTER_VERIFICATION_ERROR` - Verification Error.<br>
 	 * `PROVIDER_VERIFICATION_ERROR`- Verification Error.<br>
 	 *
-	 * @param \Umbrella\PhoneVerificationBundle\UserPhoneInterface $User
+	 * @param \PhoneVerificationBundle\UserPhoneInterface $User
 	 * @param string                                          $phone
 	 * @param string                                          $code
 	 * @param string                                          $device
 	 * @return bool
-	 * @throws \Umbrella\PhoneVerificationBundle\Service\UnexpectedError
-	 * @throws \Umbrella\PhoneVerificationBundle\VerificationErrorInterface
+	 * @throws \PhoneVerificationBundle\Service\UnexpectedError
+	 * @throws \PhoneVerificationBundle\VerificationErrorInterface
 	 */
 	public function verifyUser(UserPhoneInterface $User, string $phone, string $code, string $device) :bool
 	{

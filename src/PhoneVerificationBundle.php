@@ -1,13 +1,13 @@
 <?php
 
-namespace PhoneVerificationBundle;
+namespace Aimchat\PhoneVerificationBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
  * Class PhoneVerificationBundle
  *
- * @package Umbrella\PhoneVerificationBundle
+ * @package Aimchat\PhoneVerificationBundle
  */
 class PhoneVerificationBundle extends Bundle
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace PhoneVerificationBundle\Service\Adapter;
+namespace Aimchat\PhoneVerificationBundle\Service\Adapter;
 
-use PhoneVerificationBundle\Service\AdapterErrorInterface;
+use Aimchat\PhoneVerificationBundle\Service\AdapterErrorInterface;
 use Throwable;
 
 /**
  * Class PhoneVerifyAdapterError
  *
- * @package Umbrella\PhoneVerificationBundle\Service\Adapter
+ * @package Aimchat\PhoneVerificationBundle\Service\Adapter
  */
 abstract class AdapterError extends \Exception implements AdapterErrorInterface
 {

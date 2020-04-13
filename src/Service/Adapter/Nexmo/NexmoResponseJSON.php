@@ -1,6 +1,6 @@
 <?php
 
-namespace PhoneVerificationBundle\Service\Adapter\Nexmo;
+namespace Aimchat\PhoneVerificationBundle\Service\Adapter\Nexmo;
 
 
 /**
@@ -31,7 +31,7 @@ class NexmoResponseJSON extends NexmoResponse
 	private $error_text;
 
 	/**
-	 * @var \PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError
+	 * @var \Aimchat\PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError
 	 */
 	private $Error;
 
@@ -70,7 +70,7 @@ class NexmoResponseJSON extends NexmoResponse
 	}
 
 	/**
-	 * @return \PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError|null
+	 * @return \Aimchat\PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError|null
 	 */
 	public function getError() :?NexmoError{
 

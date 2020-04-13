@@ -1,25 +1,25 @@
 <?php
 
-namespace PhoneVerificationBundle\Service;
+namespace Aimchat\PhoneVerificationBundle\Service;
 
-use PhoneVerificationBundle\UserPhoneInterface;
-use PhoneVerificationBundle\VerificationServiceInterface;
+use Aimchat\PhoneVerificationBundle\UserPhoneInterface;
+use Aimchat\PhoneVerificationBundle\VerificationServiceInterface;
 
 
 /**
  * Class PhoneVerifyService
  *
- * @package Umbrella\PhoneVerificationBundle\Service
+ * @package Aimchat\PhoneVerificationBundle\Service
  */
 class VerificationService implements VerificationServiceInterface
 {
 	/**
-	 * @var \PhoneVerificationBundle\Service\AdapterInterface
+	 * @var \Aimchat\PhoneVerificationBundle\Service\AdapterInterface
 	 */
 	private $Adapter;
 
 	/**
-	 * @return \PhoneVerificationBundle\Service\AdapterInterface
+	 * @return \Aimchat\PhoneVerificationBundle\Service\AdapterInterface
 	 */
 	protected function getAdapter() :AdapterInterface{
 
@@ -29,7 +29,7 @@ class VerificationService implements VerificationServiceInterface
 	/**
 	 * VerificationService constructor.
 	 *
-	 * @param \PhoneVerificationBundle\Service\AdapterInterface $Adapter
+	 * @param \Aimchat\PhoneVerificationBundle\Service\AdapterInterface $Adapter
 	 */
 	public function __construct(AdapterInterface $Adapter)
 	{
@@ -57,8 +57,8 @@ class VerificationService implements VerificationServiceInterface
 	 * `UnexpectedError` - if code was not be sent, but no errors returned
 	 *
 	 * @param string $phone
-	 * @throws \PhoneVerificationBundle\Service\UnexpectedError
-	 * @throws \PhoneVerificationBundle\VerificationErrorInterface
+	 * @throws \Aimchat\PhoneVerificationBundle\Service\UnexpectedError
+	 * @throws \Aimchat\PhoneVerificationBundle\VerificationErrorInterface
 	 */
 	public function sendCode(string $phone) :void
 	{
@@ -101,8 +101,8 @@ class VerificationService implements VerificationServiceInterface
 	 * @param string $phone
 	 * @param string $code
 	 * @return bool
-	 * @throws \PhoneVerificationBundle\Service\UnexpectedError
-	 * @throws \PhoneVerificationBundle\VerificationErrorInterface
+	 * @throws \Aimchat\PhoneVerificationBundle\Service\UnexpectedError
+	 * @throws \Aimchat\PhoneVerificationBundle\VerificationErrorInterface
 	 */
 	public function verifyCode(string $phone, string $code) :bool
 	{
@@ -146,13 +146,13 @@ class VerificationService implements VerificationServiceInterface
 	 * `ADAPTER_VERIFICATION_ERROR` - Verification Error.<br>
 	 * `PROVIDER_VERIFICATION_ERROR`- Verification Error.<br>
 	 *
-	 * @param \PhoneVerificationBundle\UserPhoneInterface $User
+	 * @param \Aimchat\PhoneVerificationBundle\UserPhoneInterface $User
 	 * @param string                                          $phone
 	 * @param string                                          $code
 	 * @param string                                          $device
 	 * @return bool
-	 * @throws \PhoneVerificationBundle\Service\UnexpectedError
-	 * @throws \PhoneVerificationBundle\VerificationErrorInterface
+	 * @throws \Aimchat\PhoneVerificationBundle\Service\UnexpectedError
+	 * @throws \Aimchat\PhoneVerificationBundle\VerificationErrorInterface
 	 */
 	public function verifyUser(UserPhoneInterface $User, string $phone, string $code, string $device) :bool
 	{

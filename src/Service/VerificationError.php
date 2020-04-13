@@ -1,8 +1,8 @@
 <?php
 
-namespace PhoneVerificationBundle\Service;
+namespace Aimchat\PhoneVerificationBundle\Service;
 
-use PhoneVerificationBundle\VerificationErrorInterface;
+use Aimchat\PhoneVerificationBundle\VerificationErrorInterface;
 
 class VerificationError extends \Exception implements VerificationErrorInterface
 {

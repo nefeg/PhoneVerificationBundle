@@ -1,9 +1,9 @@
 <?php
 
-namespace PhoneVerificationBundle\Service;
+namespace Aimchat\PhoneVerificationBundle\Service;
 
 
-use PhoneVerificationBundle\VerificationErrorInterface;
+use Aimchat\PhoneVerificationBundle\VerificationErrorInterface;
 
 interface AdapterErrorInterface extends VerificationErrorInterface
 {

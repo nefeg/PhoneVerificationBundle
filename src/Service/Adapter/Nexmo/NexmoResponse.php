@@ -1,6 +1,6 @@
 <?php
 
-namespace PhoneVerificationBundle\Service\Adapter\Nexmo;
+namespace Aimchat\PhoneVerificationBundle\Service\Adapter\Nexmo;
 
 
 /**
@@ -39,7 +39,7 @@ abstract class NexmoResponse
 	abstract public function getStatusCode() :int;
 
 	/**
-	 * @return \PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError|null
+	 * @return \Aimchat\PhoneVerificationBundle\Service\Adapter\Nexmo\NexmoError|null
 	 */
 	abstract public function getError() :?NexmoError;
 }

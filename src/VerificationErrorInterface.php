@@ -1,11 +1,11 @@
 <?php
 
-namespace PhoneVerificationBundle;
+namespace Aimchat\PhoneVerificationBundle;
 
 /**
  * Interface VerificationErrorInterface
  *
- * @package Umbrella\PhoneVerificationBundle
+ * @package Aimchat\PhoneVerificationBundle
  */
 interface VerificationErrorInterface
 {

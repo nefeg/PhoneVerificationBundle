@@ -1,6 +1,6 @@
 <?php
 
-namespace PhoneVerificationBundle\Service\Adapter\Nexmo;
+namespace Aimchat\PhoneVerificationBundle\Service\Adapter\Nexmo;
 
 
 /**

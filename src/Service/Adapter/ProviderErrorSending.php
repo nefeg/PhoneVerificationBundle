@@ -1,12 +1,12 @@
 <?php
 
-namespace PhoneVerificationBundle\Service\Adapter;
+namespace Aimchat\PhoneVerificationBundle\Service\Adapter;
 
 
 /**
  * Class PhoneVerifyProviderErrorSending
  *
- * @package Umbrella\PhoneVerificationBundle\Service\Adapter
+ * @package Aimchat\PhoneVerificationBundle\Service\Adapter
  */
 class ProviderErrorSending extends AdapterErrorSending
 {

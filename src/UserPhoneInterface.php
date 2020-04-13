@@ -1,12 +1,12 @@
 <?php
 
-namespace PhoneVerificationBundle;
+namespace Aimchat\PhoneVerificationBundle;
 
 
 /**
  * Interface UserPhoneInterface
  *
- * @package Umbrella\PhoneVerificationBundle
+ * @package Aimchat\PhoneVerificationBundle
  */
 interface UserPhoneInterface
 {
@@ -17,7 +17,7 @@ interface UserPhoneInterface
 
 	/**
 	 * @param string $device
-	 * @return \PhoneVerificationBundle\UserPhoneInterface
+	 * @return \Aimchat\PhoneVerificationBundle\UserPhoneInterface
 	 */
 	public function setDevice(string $device) :UserPhoneInterface;
 
@@ -28,7 +28,7 @@ interface UserPhoneInterface
 
 	/**
 	 * @param string $phone
-	 * @return \PhoneVerificationBundle\UserPhoneInterface
+	 * @return \Aimchat\PhoneVerificationBundle\UserPhoneInterface
 	 */
 	public function setPhone(string $phone) :UserPhoneInterface;
 }
